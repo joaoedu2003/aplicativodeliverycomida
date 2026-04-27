@@ -1,5 +1,12 @@
-# aplicativodeliverycomida
+# Aplicativo de Delivery Comida
 
-Aplicativo de Delivery Comida - Banco de Dados NoSQL - Grupo 1
+Trabalho Prático 1 - Disciplina de Banco de Dados NoSQL - Grupo 1
 
-Nomes: João Vitor Carvalho Domingos, Debora Luiza Bibiano Pinto e Luiz Sergio Aires Machado Junior
+## 👥 Integrantes
+* João Vitor Carvalho Domingos
+* Debora Luiza Bibiano Pinto
+* Luiz Sergio Aires Machado Junior
+
+## 🛠️ Tecnologias Utilizadas
+* **Linguagem:** JavaScript (Node.js)
+* **Banco de Dados:** MongoDB
