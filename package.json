@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/joaoedu2003/aplicativodeliverycomida#readme",
   "dependencies": {
-    "mongodb": "^7.2.0"
+    "mongodb": "^7.2.0",
+    "mongoose": "^9.6.1"
   }
 }
