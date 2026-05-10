@@ -1,0 +1,167 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Ana Souza",
+      "email": "ana@email.com",
+      "telefone": "31995990001",
+      "endereco": {
+        "cidade": "Belo Horizonte",
+        "bairro": "Savassi",
+        "rua": "Avenida Bernardo Monteiro",
+        "numero": "1154",
+        "cep": "30150-280"
+      }
+    },
+    {
+      "id": "2",
+      "nome": "Carlos Lima",
+      "email": "carlos@email.com",
+      "telefone": "319994990002",
+      "endereco": {
+        "cidade": "Belo Horizonte",
+        "bairro": "Centro",
+        "rua": "Avenida Afonso Pena",
+        "numero": "655",
+        "cep": "30130-002"
+      }
+    },
+    {
+      "id": "3",
+      "nome": "Juliana Alves",
+      "email": "juliana.alves@email.com",
+      "telefone": "31999990003",
+      "endereco": {
+        "cidade": "Belo Horizonte",
+        "bairro": "Sion",
+        "rua": "Rua do Uruguai",
+        "numero": "678",
+        "cep": "30310-300"
+      }
+    },
+    {
+      "id": "4",
+      "nome": "Marcos Ferreira",
+      "email": "marcos.ferreira@email.com",
+      "telefone": "31999990004",
+      "endereco": {
+        "cidade": "Belo Horizonte",
+        "bairro": "Santa Tereza",
+        "rua": "Rua Bueno Brandão",
+        "numero": "30",
+        "cep": "31010-310"
+      }
+    },
+    {
+      "id": "5",
+      "nome": "Fernanda Rocha",
+      "email": "fernanda.rocha@email.com",
+      "telefone": "31999990005",
+      "endereco": {
+        "cidade": "Belo Horizonte",
+        "bairro": "Buritis",
+        "rua": "Rua Ernani Agricola",
+        "numero": "1111",
+        "cep": "30492-015"
+      }
+    }
+  ],
+  "restaurantes": [
+    {
+      "id": "1",
+      "nome": "Sabor Mineiro",
+      "categoria": "Brasileira",
+      "cardapio": [
+        {
+          "nome": "Feijão Tropeiro",
+          "preco": 32
+        },
+        {
+          "nome": "Frango com Quiabo",
+          "preco": 30
+        },
+        {
+          "nome": "Feijoada",
+          "preco": 36
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Pizza Express",
+      "categoria": "Pizzaria",
+      "cardapio": [
+        {
+          "nome": "Pizza Calabresa",
+          "preco": 40
+        },
+        {
+          "nome": "Pizza Marguerita",
+          "preco": 38
+        },
+        {
+          "nome": "Pizza A moda",
+          "preco": 49
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "nome": "Sushi House",
+      "categoria": "Japonesa",
+      "cardapio": [
+        {
+          "nome": "Combo Sushi 20 peças",
+          "preco": 50
+        },
+        {
+          "nome": "Temaki Salmão",
+          "preco": 27
+        },
+        {
+          "nome": "Combo Sushi 37 peças",
+          "preco": 67
+        }
+      ]
+    }
+  ],
+  "pedidos": [
+    {
+      "restaurante_id": 1,
+      "total": 84,
+      "status": "em preparo",
+      "id": "RE-NPzeQDGs"
+    },
+    {
+      "restaurante_id": 2,
+      "total": 23,
+      "status": "em preparo",
+      "id": "R7jwWLpkVrE"
+    },
+    {
+      "restaurante_id": 2,
+      "total": 99,
+      "status": "pronto",
+      "id": "E2Z4wnVxzHY"
+    },
+    {
+      "restaurante_id": "1",
+      "total": 68,
+      "status": "em preparo",
+      "id": "5ZZcPtCQED4"
+    },
+    {
+      "restaurante_id": "2",
+      "total": 89,
+      "status": "em preparo",
+      "id": "mJ97Yclj1wg"
+    },
+    {
+      "restaurante_id": "3",
+      "total": 117,
+      "status": "em preparo",
+      "id": "AHDzF4Xkbv8"
+    }
+  ],
+  "relatorios_vendas": []
+}
