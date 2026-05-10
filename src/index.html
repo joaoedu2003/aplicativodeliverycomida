@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeliveryApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>DeliveryApp</h1>
+  <button class="btn-perfil" onclick="showTab('perfil')">Perfil</button>
+</header>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('home')">Início</button>
+  <button class="tab" onclick="showTab('pedidos')">Pedidos</button>
+  <button class="tab" onclick="showTab('perfil')">Meu Perfil</button>
+</div>
+
+<main>
+  <div id="tab-home" class="section active">
+    <h2>Restaurantes Disponíveis</h2>
+    <div id="restaurantes" class="grid"></div>
+
+    <h2>Relatórios de Vendas</h2>
+    <div class="cards-dash">
+      <div class="card-dash">
+        <div class="card-icon"></div>
+        <span class="card-label">Restaurante Mais Pedido</span>
+        <p id="topNome" class="card-valor">-</p>
+        <span id="topInfo" class="card-sub"></span>
+      </div>
+      <div class="card-dash">
+        <div class="card-icon"></div>
+        <span class="card-label">Total de Pratos Cadastrados</span>
+        <p id="totalPratos" class="card-valor">-</p>
+        <span id="totalInfo" class="card-sub"></span>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-pedidos" class="section">
+    <h2>Histórico de Pedidos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Status</th>
+          <th>Valor</th>
+          <th>Restaurante</th>
+        </tr>
+      </thead>
+      <tbody id="pedidos-tbody"></tbody>
+    </table>
+  </div>
+
+  <div id="tab-perfil" class="section">
+    <h2>Meu Perfil</h2>
+    <div class="perfil-card">
+      <p class="perfil-title">Informações Pessoais</p>
+      <div id="alert-ok" class="alert-success">Perfil salvo com sucesso!</div>
+
+      <div class="form-group">
+        <label>Nome completo</label>
+        <input type="text" id="pf-nome" placeholder="Seu nome">
+      </div>
+      <div class="form-group">
+        <label>E-mail</label>
+        <input type="email" id="pf-email" placeholder="seu@email.com">
+      </div>
+      <div class="form-group">
+        <label>Telefone</label>
+        <input type="tel" id="pf-tel" placeholder="(31) 99999-0000">
+      </div>
+
+      <p class="perfil-title" style="margin-top: 16px;">Endereço de Entrega</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>CEP</label>
+          <input type="text" id="pf-cep" placeholder="00000-000">
+        </div>
+        <div class="form-group">
+          <label>Número</label>
+          <input type="text" id="pf-num" placeholder="123">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Rua</label>
+        <input type="text" id="pf-rua" placeholder="Nome da rua">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Bairro</label>
+          <input type="text" id="pf-bairro" placeholder="Bairro">
+        </div>
+        <div class="form-group">
+          <label>Cidade</label>
+          <input type="text" id="pf-cidade" placeholder="Cidade">
+        </div>
+      </div>
+
+      <button class="btn-salvar" onclick="salvarPerfil()">Salvar Perfil</button>
+    </div>
+  </div>
+</main>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <h3 id="modal-titulo"></h3>
+    <p class="modal-sub" id="modal-sub"></p>
+    <div id="modal-itens"></div>
+    <div class="total-row">
+      <span>Total</span>
+      <span id="modal-total">R$ 0,00</span>
+    </div>
+    <div class="modal-btns">
+      <button class="btn-cancelar" onclick="fecharModal()">Cancelar</button>
+      <button class="btn-confirmar" onclick="confirmarPedido()">Confirmar Pedido</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
